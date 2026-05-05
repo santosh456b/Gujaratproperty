@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarat Property - Premium Real Estate Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- LOGO -->
+                <div class="header-left">
+                    <a href="#home" class="logo">
+                        <img src="images/image.png" alt="Gujarat Property - Property Consulting & more" class="logo-img">
+                    </a>
+                </div>
+
+                <!-- MAIN NAVIGATION -->
+                <nav class="nav">
+                    <a href="#buy" class="nav-link">Buy</a>
+                    <a href="#rent" class="nav-link">Rent</a>
+                    <a href="#commercial" class="nav-link">Commercial</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- HEADER RIGHT - PHONE & CTA -->
+                <div class="header-right">
+                    <div class="phone-info">
+                        <i class="ph ph-phone-call phone-label"></i>
+                        <a href="tel:+919876543210" class="phone-number">+91 98765 43210</a>
+                    </div>
+                    <button class="btn btn-primary post-property-btn">Post Property Free</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="h1 hero-title">Find Your Next Home</h1>
+                <p class="body-large hero-subtitle">Where every real estate goal becomes reality.</p>
+            </div>
+
+            <!-- FILTER TABS -->
+            <div class="search-wrapper">
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">All</button>
+                    <button class="filter-tab" data-filter="sale">For Sale</button>
+                    <button class="filter-tab" data-filter="rent">For Rent</button>
+                </div>
+
+                <!-- SEARCH BAR -->
+                <form class="search-bar hero-search">
+                <div class="search-field">
+                    <select class="search-input" aria-label="Location">
+                        <option value=""><i class="ph ph-map-pin"></i> Location</option>
+                        <option value="ahmedabad">Ahmedabad</option>
+                        <option value="gandhinagar">Gandhinagar</option>
+                        <option value="vadodara">Vadodara</option>
+                        <option value="surat">Surat</option>
+                        <option value="rajkot">Rajkot</option>
+                        <option value="jaipur">Jaipur</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="bangalore">Bangalore</option>
+                    </select>
+                </div>
+
+                <div class="search-field">
+                    <select class="search-input" aria-label="Property Type">
+                        <option value=""><i class="ph ph-house"></i> Type</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="villa">Villa</option>
+                        <option value="commercial">Commercial</option>
+                        <option value="land">Land</option>
+                        <option value="office">Office</option>
+                        <option value="retail">Retail</option>
+                    </select>
+                </div>
+
+                <div class="search-field">
+                    <select class="search-input" aria-label="Budget">
+                        <option value=""><i class="ph ph-wallet"></i> Budget</option>
+                        <option value="0-25">Under ₹25 Lakhs</option>
+                        <option value="25-50">₹25 – ₹50 Lakhs</option>
+                        <option value="50-75">₹50 – ₹75 Lakhs</option>
+                        <option value="75-100">₹75 Lakhs – ₹1 Cr</option>
+                        <option value="100-200">₹1 Cr – ₹2 Cr</option>
+                        <option value="200+">Above ₹2 Cr</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-search hero-search-btn"><i class="ph ph-magnifying-glass"></i> Search</button>
+            </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORIES SECTION -->
+    <section class="categories">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">[ Browse Categories ]</span>
+                <h2 class="h2 section-title">What Are You Looking For?</h2>
+                <p class="section-subtext">Explore our wide range of property options tailored to your needs — whether you're buying, renting, or investing.</p>
+            </div>
+            <div class="categories-grid">
+
+                <!-- Buy Property -->
+                <a href="#buy" class="category-card" aria-label="Buy Property">
+                    <div class="category-icon-wrap">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M4 13.333L16 4l12 9.333V28a1.333 1.333 0 01-1.333 1.333H5.333A1.333 1.333 0 014 28V13.333z" stroke="#1F3A5F" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M12 29.333V18.667h8v10.666" stroke="#1F3A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h4 class="cat-title">Buy Property</h4>
+                    <p class="cat-desc">Find your dream home from thousands of verified listings across top cities.</p>
+                    <span class="cat-cta">Explore Properties →</span>
+                </a>
+
+                <!-- Rent Property -->
+                <a href="#rent" class="category-card" aria-label="Rent Property">
+                    <div class="category-icon-wrap">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <rect x="4" y="12" width="24" height="17.333" rx="1.333" stroke="#1F3A5F" stroke-width="2"/>
+                            <path d="M2.667 13.333L16 2.667l13.333 10.666" stroke="#1F3A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 29.333v-8h8v8" stroke="#1F3A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h4 class="cat-title">Rent Property</h4>
+                    <p class="cat-desc">Browse furnished and unfurnished rentals that fit your lifestyle and budget.</p>
+                    <span class="cat-cta">Find Rentals →</span>
+                </a>
+
+                <!-- Commercial -->
+                <a href="#commercial" class="category-card" aria-label="Commercial Properties">
+                    <div class="category-icon-wrap">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <rect x="4" y="4" width="24" height="24" rx="1.333" stroke="#1F3A5F" stroke-width="2"/>
+                            <path d="M4 12h24M4 20h24M12 4v24M20 4v24" stroke="#1F3A5F" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h4 class="cat-title">Commercial</h4>
+                    <p class="cat-desc">Offices, retail spaces, and commercial complexes in prime business locations.</p>
+                    <span class="cat-cta">View Commercial →</span>
+                </a>
+
+                <!-- New Projects -->
+                <a href="#projects" class="category-card" aria-label="New Projects">
+                    <div class="category-icon-wrap">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M16 2.667l3.09 6.26 6.91 1.006-5 4.873 1.18 6.881L16 18.507l-6.18 3.18 1.18-6.881-5-4.873 6.91-1.006L16 2.667z" stroke="#1F3A5F" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M8 22.667v6.666M16 24v5.333M24 22.667v6.666" stroke="#1F3A5F" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h4 class="cat-title">New Projects</h4>
+                    <p class="cat-desc">Discover newly launched residential and commercial projects with early-bird pricing.</p>
+                    <span class="cat-cta">See New Launches →</span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED PROPERTIES SECTION -->
+    <section class="properties" id="properties">
+        <div class="container">
+
+            <!-- Section Header -->
+            <div class="section-header">
+                <span class="section-label">[ Featured Listings ]</span>
+                <h2 class="h2 section-title">Featured Properties You'll Love</h2>
+                <p class="section-subtext">Hand-picked listings across top cities — verified, updated daily, and ready for you to explore.</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="prop-filter-tabs" role="tablist" aria-label="Property filter">
+                <button class="prop-filter-tab active" data-prop-filter="all" role="tab" aria-selected="true">[ ALL ]</button>
+                <button class="prop-filter-tab" data-prop-filter="buy" role="tab" aria-selected="false">BUY</button>
+                <button class="prop-filter-tab" data-prop-filter="rent" role="tab" aria-selected="false">RENT</button>
+                <button class="prop-filter-tab" data-prop-filter="commercial" role="tab" aria-selected="false">COMMERCIAL</button>
+            </div>
+
+            <!-- Properties Grid -->
+            <div class="properties-grid">
+
+                <!-- Card 1 — Buy -->
+                <article class="property-card" data-category="buy">
+                    <a href="#" class="prop-image-wrap" aria-label="View Skyline Heights Apartment">
+                        <img
+                            src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&h=440&fit=crop"
+                            alt="Skyline Heights Apartment in Ahmedabad"
+                            class="prop-img"
+                            loading="lazy"
+                        />
+                        <span class="prop-badge prop-badge--buy">For Sale</span>
+                        <button class="prop-save" aria-label="Save property" title="Save">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                        </button>
+                    </a>
+                    <div class="prop-content">
+                        <div class="prop-price-row">
+                            <span class="prop-price">₹45 Lakhs</span>
+                            <span class="prop-type-label">Apartment</span>
+                        </div>
+                        <h3 class="prop-title"><a href="#">Skyline Heights</a></h3>
+                        <p class="prop-location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Satellite Road, Ahmedabad
+                        </p>
+                        <div class="prop-details">
+                            <span class="prop-detail">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                                2 BHK
+                            </span>
+                            <span class="prop-detail">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                                1,200 sq.ft
+                            </span>
+                            <span class="prop-detail">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16v12H4zM2 20h20"/></svg>
+                                2 Bath
+                            </span>
+                        </div>
+                        <div class="prop-footer">
+                            <a href="#" class="btn btn-prop-primary">Get Details</a>
+                            <span class="prop-tag">Furnished</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2 — Buy -->
+                <article class="property-card" data-category="buy">
+                    <a href="#" class="prop-image-wrap" aria-label="View Green Valley Villa">
+                        <img
+                            src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=440&fit=crop"
+                            alt="Green Valley Villa in Gandhinagar"
+                            class="prop-img"
+                            loading="lazy"
+                        />
+                        <span class="prop-badge prop-badge--buy">For Sale</span>
+                        <button class="prop-save" aria-label="Save property" title="Save">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                        </button>
+                    </a>
+                    <div class="prop-content">
+                        <div class="prop-price-row">
+                            <span class="prop-price">₹75 Lakhs</span>
+                            <span class="prop-type-label">Villa</span>
+                        </div>
+                        <h3 class="prop-title"><a href="#">Green Valley Villa</a></h3>
+                        <p class="prop-location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Premium Society, Gandhinagar
+                        </p>
+                        <div class="prop-details">
+                            <span class="prop-detail">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                                3 BHK
+                            </span>
+                            <span class="prop-detail">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                                2,400 sq.ft
+                            </span>
+                            <span class="prop-detail">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16v12H4zM2 20h20"/></svg>
+                                3 Bath
+                            </span>
+                        </div>
+                        <div class="prop-footer">
+                            <a href="#" class="btn btn-prop-primary">Get Details</a>
+                            <span class="prop-tag">Semi-Furnished</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 — Commercial -->
+                <article class="property-card" data-category="commercial">
+                    <a href="#" class="prop-image-wrap" aria-label="View Nexus Business Hub">
+                        <img
+                            src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=440&fit=crop"
+                            alt="Nexus Business Hub in Vadodara"
+                            class="prop-img"
+                            loading="lazy"
+                        />
+                        <span class="prop-badge prop-badge--commercial">Commercial</span>
+                        <button class="prop-save" aria-label="Save property" title="Save">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                        </button>
+                    </a>
+                    <div class="prop-content">
+                        <div class="prop-price-row">
+                            <span class="prop-price">₹1.2 Crore</span>
+                            <span class="prop-type-label">Office Space</span>
+                        </div>
+                        <h3 class="prop-title"><a href="#">Nexus Business Hub</a></h3>
+                        <p class="prop-location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Business District, Vadodara
+                        </p>
+                        <div class="prop-details">
+                            <span class="prop-detail">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                                5,000 sq.ft
+                            </span>
+                            <span class="prop-detail">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                Ready to Move
+                            </span>
+                            <span class="prop-detail">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+                                Ground Floor
+                            </span>
+                        </div>
+                        <div class="prop-footer">
+                            <a href="#" class="btn btn-prop-primary">Get Details</a>
+                            <span class="prop-tag">Prime Location</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 4 — Rent -->
+                <article class="property-card" data-category="rent">
+                    <a href="#" class="prop-image-wrap" aria-label="View Serene Residency">
+                        <img
+                            src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&h=440&fit=crop"
+                            alt="Serene Residency in Surat"
+                            class="prop-img"
+                            loading="lazy"
+                        />
+                        <span class="prop-badge prop-badge--rent">For Rent</span>
+                        <button class="prop-save" aria-label="Save property" title="Save">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                        </button>
+                    </a>
+                    <div class="prop-content">
+                        <div class="prop-price-row">
+                            <span class="prop-price">₹18,000<span class="prop-price-unit">/mo</span></span>
+                            <span class="prop-type-label">Apartment</span>
+                        </div>
+                        <h3 class="prop-title"><a href="#">Serene Residency</a></h3>
+                        <p class="prop-location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Vesu, Surat
+                        </p>
+                        <div class="prop-details">
+                            <span class="prop-detail">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                                2 BHK
+                            </span>
+                            <span class="prop-detail">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                                950 sq.ft
+                            </span>
+                            <span class="prop-detail">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16v12H4zM2 20h20"/></svg>
+                                2 Bath
+                            </span>
+                        </div>
+                        <div class="prop-footer">
+                            <a href="#" class="btn btn-prop-primary">Get Details</a>
+                            <span class="prop-tag">Fully Furnished</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 5 — Rent -->
+                <article class="property-card" data-category="rent">
+                    <a href="#" class="prop-image-wrap" aria-label="View Urban Nest Studio">
+                        <img
+                            src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&h=440&fit=crop"
+                            alt="Urban Nest Studio in Rajkot"
+                            class="prop-img"
+                            loading="lazy"
+                        />
+                        <span class="prop-badge prop-badge--rent">For Rent</span>
+                        <button class="prop-save" aria-label="Save property" title="Save">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                        </button>
+                    </a>
+                    <div class="prop-content">
+                        <div class="prop-price-row">
+                            <span class="prop-price">₹9,500<span class="prop-price-unit">/mo</span></span>
+                            <span class="prop-type-label">Studio</span>
+                        </div>
+                        <h3 class="prop-title"><a href="#">Urban Nest Studio</a></h3>
+                        <p class="prop-location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Kalawad Road, Rajkot
+                        </p>
+                        <div class="prop-details">
+                            <span class="prop-detail">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                                1 BHK
+                            </span>
+                            <span class="prop-detail">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                                520 sq.ft
+                            </span>
+                            <span class="prop-detail">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16v12H4zM2 20h20"/></svg>
+                                1 Bath
+                            </span>
+                        </div>
+                        <div class="prop-footer">
+                            <a href="#" class="btn btn-prop-primary">Get Details</a>
+                            <span class="prop-tag">Furnished</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 6 — Commercial -->
+                <article class="property-card" data-category="commercial">
+                    <a href="#" class="prop-image-wrap" aria-label="View Prestige Retail Plaza">
+                        <img
+                            src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=440&fit=crop"
+                            alt="Prestige Retail Plaza in Ahmedabad"
+                            class="prop-img"
+                            loading="lazy"
+                        />
+                        <span class="prop-badge prop-badge--commercial">Commercial</span>
+                        <button class="prop-save" aria-label="Save property" title="Save">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                        </button>
+                    </a>
+                    <div class="prop-content">
+                        <div class="prop-price-row">
+                            <span class="prop-price">₹85 Lakhs</span>
+                            <span class="prop-type-label">Retail Shop</span>
+                        </div>
+                        <h3 class="prop-title"><a href="#">Prestige Retail Plaza</a></h3>
+                        <p class="prop-location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            CG Road, Ahmedabad
+                        </p>
+                        <div class="prop-details">
+                            <span class="prop-detail">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                                800 sq.ft
+                            </span>
+                            <span class="prop-detail">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                Ready to Move
+                            </span>
+                            <span class="prop-detail">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+                                High Footfall
+                            </span>
+                        </div>
+                        <div class="prop-footer">
+                            <a href="#" class="btn btn-prop-primary">Get Details</a>
+                            <span class="prop-tag">Corner Unit</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- View All CTA -->
+            <div class="section-center">
+                <a href="#" class="btn btn-primary prop-view-all">View All Properties</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TOP LOCATIONS SECTION -->
+    <section class="locations" id="locations">
+        <div class="locations-container">
+            <div class="section-header">
+                <span class="section-label">[ Explore By City ]</span>
+                <h2 class="h2 section-title">Top Locations</h2>
+                <p class="section-subtext">Discover properties in Gujarat's most sought-after cities — from bustling metros to peaceful suburbs.</p>
+            </div>
+
+            <div class="locations-grid">
+
+                <!-- Large card — Ahmedabad -->
+                <a href="#" class="loc-card loc-card--large" aria-label="Explore properties in Ahmedabad">
+                    <div class="loc-img-wrap">
+                        <img
+                            src="https://images.unsplash.com/photo-1587474260584-136574528ed5?w=900&h=800&fit=crop"
+                            alt="Ahmedabad cityscape"
+                            class="loc-img"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="loc-overlay"></div>
+                    <div class="loc-text">
+                        <span class="loc-name">Ahmedabad</span>
+                        <span class="loc-count">240+ Listings</span>
+                    </div>
+                </a>
+
+                <!-- Small cards — 2×2 right -->
+                <div class="locations-small-grid">
+
+                    <!-- Surat -->
+                    <a href="#" class="loc-card" aria-label="Explore properties in Surat">
+                        <div class="loc-img-wrap">
+                            <img
+                                src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=600&h=400&fit=crop"
+                                alt="Surat cityscape"
+                                class="loc-img"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="loc-overlay"></div>
+                        <div class="loc-text">
+                            <span class="loc-name">Surat</span>
+                            <span class="loc-count">180+ Listings</span>
+                        </div>
+                    </a>
+
+                    <!-- Vadodara -->
+                    <a href="#" class="loc-card" aria-label="Explore properties in Vadodara">
+                        <div class="loc-img-wrap">
+                            <img
+                                src="https://images.unsplash.com/photo-1599930113854-d6d7fd521f10?w=600&h=400&fit=crop"
+                                alt="Vadodara cityscape"
+                                class="loc-img"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="loc-overlay"></div>
+                        <div class="loc-text">
+                            <span class="loc-name">Vadodara</span>
+                            <span class="loc-count">120+ Listings</span>
+                        </div>
+                    </a>
+
+                    <!-- Gandhinagar -->
+                    <a href="#" class="loc-card" aria-label="Explore properties in Gandhinagar">
+                        <div class="loc-img-wrap">
+                            <img
+                                src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&h=400&fit=crop"
+                                alt="Gandhinagar cityscape"
+                                class="loc-img"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="loc-overlay"></div>
+                        <div class="loc-text">
+                            <span class="loc-name">Gandhinagar</span>
+                            <span class="loc-count">95+ Listings</span>
+                        </div>
+                    </a>
+
+                    <!-- Rajkot -->
+                    <a href="#" class="loc-card" aria-label="Explore properties in Rajkot">
+                        <div class="loc-img-wrap">
+                            <img
+                                src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&h=400&fit=crop"
+                                alt="Rajkot cityscape"
+                                class="loc-img"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="loc-overlay"></div>
+                        <div class="loc-text">
+                            <span class="loc-name">Rajkot</span>
+                            <span class="loc-count">75+ Listings</span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <span class="section-label">[ Client Stories ]</span>
+            <h2 class="h2 section-title">What Our Clients Say</h2>
+
+            <!-- Progress bar -->
+            <div class="testimonial-progress">
+                <div class="testimonial-progress-bar" id="testimonialProgress" style="width: 14.28%"></div>
+            </div>
+
+            <div class="testimonial-carousel">
+
+                <!-- 1 -->
+                <div class="testimonial-card active">
+                    <span class="stars">★★★★★</span>
+                    <p class="testimonial-text">"Thanks for securing fully furnished office space for rent in Ahmedabad for my IT Startup. I was a first time business owner who is completely unaware to the leasing process and your experienced leasing agents handled the job with utmost Transparency and Professionalism which made the process seem easy."</p>
+                    <div class="testimonial-footer">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">RS</div>
+                            <div class="testimonial-meta">
+                                <h4>Rahul Singh</h4>
+                                <p class="small">Pixielit Studios</p>
+                            </div>
+                        </div>
+                        <div class="carousel-controls">
+                            <button class="carousel-btn prev" aria-label="Previous">&#8249;</button>
+                            <button class="carousel-btn next" aria-label="Next">&#8250;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="testimonial-card">
+                    <span class="stars">★★★★★</span>
+                    <p class="testimonial-text">"It was indeed good experience to have the guidance and assistance of these guys, who knows the commercial property market in Ahmedabad very well, pays attention to understand the details of the business needs and provide incredible services."</p>
+                    <div class="testimonial-footer">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">SB</div>
+                            <div class="testimonial-meta">
+                                <h4>Sankalp Bhalla</h4>
+                                <p class="small">Reliance General Insurance</p>
+                            </div>
+                        </div>
+                        <div class="carousel-controls">
+                            <button class="carousel-btn prev" aria-label="Previous">&#8249;</button>
+                            <button class="carousel-btn next" aria-label="Next">&#8250;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="testimonial-card">
+                    <span class="stars">★★★★★</span>
+                    <p class="testimonial-text">"We wanted to thank your marketing team for their excellent work in marketing our Commercial office Space in Ahmedabad. Within 60 days of enrollment with you there were multiple inquiries, including decent offers that culminated in a lease contract with a reputed MNC."</p>
+                    <div class="testimonial-footer">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">RP</div>
+                            <div class="testimonial-meta">
+                                <h4>Riddhi Patel &amp; Jatin Patel</h4>
+                                <p class="small">Property Owners, Ahmedabad</p>
+                            </div>
+                        </div>
+                        <div class="carousel-controls">
+                            <button class="carousel-btn prev" aria-label="Previous">&#8249;</button>
+                            <button class="carousel-btn next" aria-label="Next">&#8250;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="testimonial-card">
+                    <span class="stars">★★★★★</span>
+                    <p class="testimonial-text">"After checking with all my business and real estate connections, I choose Gujarat Property to list my office in the Corporate Park. Within over a month period they were able to successfully rent out my commercial property to reputed corporate company for 3 year lease contract. I would say they are the best commercial real estate agents in Ahmedabad."</p>
+                    <div class="testimonial-footer">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">NS</div>
+                            <div class="testimonial-meta">
+                                <h4>Nirav Shah</h4>
+                                <p class="small">House of Packaging</p>
+                            </div>
+                        </div>
+                        <div class="carousel-controls">
+                            <button class="carousel-btn prev" aria-label="Previous">&#8249;</button>
+                            <button class="carousel-btn next" aria-label="Next">&#8250;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="testimonial-card">
+                    <span class="stars">★★★★★</span>
+                    <p class="testimonial-text">"From the very first day of meeting you to signing the lease agreement, we are reminded that our decision to connect the right one. Due to business expansion we were looking for a much bigger office to accommodate 40 new software engineers on urgent basis. Your agents put up really hard work and time to fulfill our requirement of fully functional and furnished office space on rent in no time."</p>
+                    <div class="testimonial-footer">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">AS</div>
+                            <div class="testimonial-meta">
+                                <h4>Ashok Surve</h4>
+                                <p class="small">Infosense Pvt. Ltd.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-controls">
+                            <button class="carousel-btn prev" aria-label="Previous">&#8249;</button>
+                            <button class="carousel-btn next" aria-label="Next">&#8250;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6 -->
+                <div class="testimonial-card">
+                    <span class="stars">★★★★★</span>
+                    <p class="testimonial-text">"As we are stockbroking and advisory company with more than 30 branch offices in India, we are dealing with many real estate brokers across India on regular basis. We would like to mention that, Gujarat Property is the best among all. They completed the leasing process; from viewing to signing the lease agreement, all within just 3 days."</p>
+                    <div class="testimonial-footer">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">NK</div>
+                            <div class="testimonial-meta">
+                                <h4>Nikhil Shah</h4>
+                                <p class="small">Swastika Investmart Ltd.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-controls">
+                            <button class="carousel-btn prev" aria-label="Previous">&#8249;</button>
+                            <button class="carousel-btn next" aria-label="Next">&#8250;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7 -->
+                <div class="testimonial-card">
+                    <span class="stars">★★★★★</span>
+                    <p class="testimonial-text">"Gujarat Property helped us in leasing fully furnished office space on S.G. Highway, Ahmedabad with the furniture of our customized requirement. I appreciate their efforts in regularly visiting the site, coordinating with the Landlord, Architect and vendors and also for oversee the ongoing work so we get possession of the office before the rent commencement date. I strongly recommend this agency."</p>
+                    <div class="testimonial-footer">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">MT</div>
+                            <div class="testimonial-meta">
+                                <h4>Dr. M.P. Tambe</h4>
+                                <p class="small">Public Health Foundation of India</p>
+                            </div>
+                        </div>
+                        <div class="carousel-controls">
+                            <button class="carousel-btn prev" aria-label="Previous">&#8249;</button>
+                            <button class="carousel-btn next" aria-label="Next">&#8250;</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Hidden dots kept for JS compatibility -->
+            <div class="carousel-dots" aria-hidden="true">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+                <span class="dot" data-slide="3"></span>
+                <span class="dot" data-slide="4"></span>
+                <span class="dot" data-slide="5"></span>
+                <span class="dot" data-slide="6"></span>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- CONTACT US SECTION -->
+    <section class="contact-section" id="contact-form">
+        <div class="contact-overlay"></div>
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="h2 contact-title">Contact Us</h2>
+                <p class="contact-subtitle">Tell us about your real estate goals and we will reply within 24 hours.</p>
+                
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="full-name" class="form-label">FULL NAME <span class="required">*</span></label>
+                            <input type="text" id="full-name" class="form-input" placeholder="John Smith" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">EMAIL ADDRESS <span class="required">*</span></label>
+                            <input type="email" id="email" class="form-input" placeholder="john.smith@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone" class="form-label">PHONE NUMBER</label>
+                            <input type="tel" id="phone" class="form-input" placeholder="+1 (555) 123-4567">
+                        </div>
+                        <div class="form-group">
+                            <label for="reason" class="form-label">REASON FOR CONTACT <span class="required">*</span></label>
+                            <select id="reason" class="form-input" required>
+                                <option value="">Select a reason...</option>
+                                <option value="buy">Want to Buy</option>
+                                <option value="rent">Want to Rent</option>
+                                <option value="sell">Want to Sell</option>
+                                <option value="investment">Investment Inquiry</option>
+                                <option value="commercial">Commercial Property</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">HOW CAN WE HELP YOU?</label>
+                        <textarea id="message" class="form-input form-textarea" placeholder="Tell us about your dream property or ask any questions..." rows="5"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-contact-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+        <div class="footer-inner">
+
+            <!-- CTA STRIP -->
+            <div class="footer-cta-strip">
+                <div class="footer-cta-text">
+                    <h3 class="footer-cta-title">Looking to buy, rent, or list your property?</h3>
+                    <p class="footer-cta-sub">Connect with Gujarat's most trusted real estate platform today.</p>
+                </div>
+                <div class="footer-cta-actions">
+                    <a href="#properties" class="btn footer-btn-primary">Search Properties</a>
+                    <a href="#" class="btn footer-btn-outline">Post Property Free</a>
+                </div>
+            </div>
+
+            <!-- DIVIDER -->
+            <div class="footer-divider"></div>
+
+            <!-- MAIN GRID -->
+            <div class="footer-grid">
+
+                <!-- Col 1: Brand -->
+                <div class="footer-section footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <img src="images/image.png" alt="Gujarat Property" class="footer-logo-img">
+                    </a>
+                    <p class="footer-desc">Your trusted partner in finding premium properties across Gujarat and India. We make every real estate goal a reality.</p>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="footer-section">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#buy">Buy Property</a></li>
+                        <li><a href="#rent">Rent Property</a></li>
+                        <li><a href="#commercial">Commercial</a></li>
+                        <li><a href="#projects">New Projects</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Locations -->
+                <div class="footer-section">
+                    <h4 class="footer-heading">Top Locations</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Ahmedabad</a></li>
+                        <li><a href="#">Surat</a></li>
+                        <li><a href="#">Vadodara</a></li>
+                        <li><a href="#">Gandhinagar</a></li>
+                        <li><a href="#">Rajkot</a></li>
+                        <li><a href="#">Anand</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact -->
+                <div class="footer-section">
+                    <h4 class="footer-heading">Get In Touch</h4>
+
+                    <ul class="footer-contact-list">
+                        <li>
+                            <span class="footer-contact-icon">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </span>
+                            <span>301, Shivalik Plaza, SG Highway,<br>Ahmedabad – 380015</span>
+                        </li>
+                        <li>
+                            <span class="footer-contact-icon">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.18 2 2 0 012.11 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.45-.45a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                            </span>
+                            <a href="tel:+919876543210">+91 98765 43210</a>
+                        </li>
+                        <li>
+                            <span class="footer-contact-icon">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </span>
+                            <a href="mailto:info@gujaratproperty.com">info@gujaratproperty.com</a>
+                        </li>
+                    </ul>
+
+                    <!-- Social Icons -->
+                    <div class="footer-socials">
+                        <a href="#" class="footer-social-btn" aria-label="Facebook">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                        </a>
+                        <a href="#" class="footer-social-btn" aria-label="Instagram">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="#" class="footer-social-btn" aria-label="WhatsApp">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- BOTTOM BAR -->
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; 2026 Gujarat Property. All rights reserved. | Property Consulting &amp; more</p>
+                <button class="back-to-top" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+                </button>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

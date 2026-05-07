@@ -47,25 +47,23 @@ function initializeSearchBar() {
     const searchInputs = document.querySelectorAll('.search-input');
     searchInputs.forEach(input => {
         input.addEventListener('focus', function() {
-            this.parentElement.style.transform = 'scale(1.02)';
+            this.parentElement.style.boxShadow = '0 0 0 3px rgba(31, 58, 95, 0.1)';
         });
         
         input.addEventListener('blur', function() {
-            this.parentElement.style.transform = 'scale(1)';
+            this.parentElement.style.boxShadow = 'none';
         });
     });
 }
 
 function showSearchFeedback() {
     const searchBar = document.querySelector('.search-bar');
-    const originalBg = searchBar.style.background;
-    
-    searchBar.style.background = 'rgba(214, 40, 40, 0.05)';
-    searchBar.style.transition = 'background 0.3s ease';
-    
+    if (!searchBar) return;
+
+    searchBar.classList.add('search-bar--feedback');
     setTimeout(() => {
-        searchBar.style.background = originalBg;
-    }, 1500);
+        searchBar.classList.remove('search-bar--feedback');
+    }, 1000);
 }
 
 /* ========================================
@@ -298,54 +296,9 @@ function initializeSmoothScroll() {
    ======================================== */
 
 function initializeHoverEffects() {
-    // Property cards - enhanced hover
-    const propertyCards = document.querySelectorAll('.property-card');
-    propertyCards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            this.style.transition = 'all 0.2s ease';
-        });
-    });
-
-    // Category cards - hover scale
-    const categoryCards = document.querySelectorAll('.category-card');
-    categoryCards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            this.style.transition = 'all 0.2s ease';
-            // Add slight rotation on hover
-            this.style.transform = 'translateY(-8px) rotate(1deg)';
-        });
-
-        card.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0) rotate(0deg)';
-        });
-    });
-
-    // Button hover effects
-    const buttons = document.querySelectorAll('.btn');
-    buttons.forEach(btn => {
-        btn.addEventListener('mouseenter', function() {
-            this.style.transition = 'all 0.2s ease';
-        });
-    });
-
-    // Benefit cards hover
-    const benefitCards = document.querySelectorAll('.benefit-card');
-    benefitCards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            const icon = this.querySelector('.benefit-icon');
-            if (icon) {
-                icon.style.transition = 'transform 0.3s ease';
-                icon.style.transform = 'scale(1.15) rotate(-10deg)';
-            }
-        });
-
-        card.addEventListener('mouseleave', function() {
-            const icon = this.querySelector('.benefit-icon');
-            if (icon) {
-                icon.style.transform = 'scale(1) rotate(0deg)';
-            }
-        });
-    });
+    // All hover effects are now handled purely in CSS
+    // No inline style manipulation needed
+    console.log('Hover effects initialized (CSS-only)');
 }
 
 /* ========================================
@@ -455,32 +408,7 @@ document.addEventListener('click', function(e) {
     }
 });
 
-// Button ripple effect
-function createRipple(event) {
-    const button = event.currentTarget;
-    const circle = document.createElement('span');
-    const diameter = Math.max(button.clientWidth, button.clientHeight);
-    const radius = diameter / 2;
-
-    circle.style.width = circle.style.height = diameter + 'px';
-    circle.style.left = (event.clientX - button.offsetLeft - radius) + 'px';
-    circle.style.top = (event.clientY - button.offsetTop - radius) + 'px';
-    circle.classList.add('ripple');
-
-    // Remove existing ripple
-    const ripple = button.querySelector('.ripple');
-    if (ripple) {
-        ripple.remove();
-    }
-
-    button.appendChild(circle);
-}
-
-// Add ripple effect to all buttons
-const buttons = document.querySelectorAll('.btn');
-buttons.forEach(button => {
-    button.addEventListener('click', createRipple);
-});
+// Button ripple effect — removed (was causing layout shifts on click)
 
 // Keyboard navigation for better accessibility
 document.addEventListener('keydown', function(e) {

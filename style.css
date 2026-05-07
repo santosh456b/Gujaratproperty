@@ -236,7 +236,7 @@ p {
 }
 
 .btn:hover {
-    transform: translateY(-2px);
+    opacity: 0.92;
 }
 
 .btn-primary {
@@ -517,7 +517,8 @@ p {
 }
 
 .btn-search:active {
-    transform: translateY(0);
+    transform: none;
+    opacity: 0.85;
 }
 
 /* ========================================
@@ -844,6 +845,12 @@ p {
     align-items: center;
     max-width: 100%;
     width: 100%;
+    transition: box-shadow 300ms ease;
+}
+
+/* Subtle border flash on submit — never touches background-color */
+.hero-search.search-bar--feedback {
+    box-shadow: 0 0 0 3px rgba(214, 40, 40, 0.25);
 }
 
 .price-range {
@@ -1923,7 +1930,8 @@ p {
 }
 
 .btn-contact-submit:active {
-    transform: translateY(0);
+    transform: none;
+    opacity: 0.85;
 }
 
 /* ========================================

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- HEADER & NAVIGATION -->
-    <header class="header">
+    <header class="header" id="site-header">
         <div class="container">
             <div class="header-content">
                 <!-- LOGO -->
@@ -20,13 +20,24 @@
                     </a>
                 </div>
 
+                <!-- HAMBURGER BUTTON (mobile only) -->
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+                    <span class="nav-toggle__bar"></span>
+                    <span class="nav-toggle__bar"></span>
+                    <span class="nav-toggle__bar"></span>
+                </button>
+
                 <!-- MAIN NAVIGATION -->
-                <nav class="nav">
+                <nav class="nav" id="mainNav" aria-label="Main navigation">
                     <a href="#buy" class="nav-link">Buy</a>
                     <a href="#rent" class="nav-link">Rent</a>
                     <a href="#commercial" class="nav-link">Commercial</a>
                     <a href="#projects" class="nav-link">Projects</a>
                     <a href="#contact" class="nav-link">Contact</a>
+                    <!-- Phone inside nav on mobile -->
+                    <a href="tel:+919876543210" class="nav-link nav-link--phone">
+                        <i class="ph ph-phone-call"></i> +91 98765 43210
+                    </a>
                 </nav>
 
                 <!-- HEADER RIGHT - PHONE & CTA -->
@@ -43,6 +54,18 @@
 
     <!-- HERO SECTION -->
     <section class="hero" id="home">
+        <!-- VIDEO BACKGROUND -->
+        <video
+            class="hero-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+            aria-hidden="true"
+        >
+            <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260403_050628_c4e32401-fab4-4a27-b7a8-6e9291cd5959.mp4" type="video/mp4">
+        </video>
         <div class="hero-overlay"></div>
         <div class="container hero-container">
             <div class="hero-content">
@@ -117,9 +140,18 @@
                 <!-- Buy Property -->
                 <a href="#buy" class="category-card" aria-label="Buy Property">
                     <div class="category-icon-wrap">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path d="M4 13.333L16 4l12 9.333V28a1.333 1.333 0 01-1.333 1.333H5.333A1.333 1.333 0 014 28V13.333z" stroke="#1F3A5F" stroke-width="2" stroke-linejoin="round"/>
-                            <path d="M12 29.333V18.667h8v10.666" stroke="#1F3A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <!-- Residential rooftop: pitched roof + chimney + walls -->
+                        <svg width="44" height="36" viewBox="0 0 44 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <!-- Chimney -->
+                            <line x1="26" y1="5" x2="26" y2="13" stroke="#1F3A5F" stroke-width="1.6" stroke-linecap="round"/>
+                            <!-- Pitched roof -->
+                            <polyline points="2,18 22,4 42,18" stroke="#1F3A5F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                            <!-- Left wall lines (like the image) -->
+                            <line x1="6" y1="18" x2="6" y2="34" stroke="#1F3A5F" stroke-width="1.6" stroke-linecap="round"/>
+                            <line x1="10" y1="16" x2="10" y2="34" stroke="#1F3A5F" stroke-width="1.6" stroke-linecap="round"/>
+                            <line x1="14" y1="14" x2="14" y2="34" stroke="#1F3A5F" stroke-width="1.6" stroke-linecap="round"/>
+                            <!-- Ground line -->
+                            <line x1="2" y1="34" x2="42" y2="34" stroke="#1F3A5F" stroke-width="1.6" stroke-linecap="round"/>
                         </svg>
                     </div>
                     <h4 class="cat-title">Buy Property</h4>
@@ -130,10 +162,21 @@
                 <!-- Rent Property -->
                 <a href="#rent" class="category-card" aria-label="Rent Property">
                     <div class="category-icon-wrap">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <rect x="4" y="12" width="24" height="17.333" rx="1.333" stroke="#1F3A5F" stroke-width="2"/>
-                            <path d="M2.667 13.333L16 2.667l13.333 10.666" stroke="#1F3A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M12 29.333v-8h8v8" stroke="#1F3A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <!-- Apartment block: flat roof + multiple floors suggested by vertical lines -->
+                        <svg width="44" height="36" viewBox="0 0 44 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <!-- Flat roof line -->
+                            <line x1="4" y1="8" x2="40" y2="8" stroke="#1F3A5F" stroke-width="1.6" stroke-linecap="round"/>
+                            <!-- Vertical wall lines suggesting floors -->
+                            <line x1="4" y1="8" x2="4" y2="34" stroke="#1F3A5F" stroke-width="1.6" stroke-linecap="round"/>
+                            <line x1="12" y1="8" x2="12" y2="34" stroke="#1F3A5F" stroke-width="1.6" stroke-linecap="round"/>
+                            <line x1="20" y1="8" x2="20" y2="34" stroke="#1F3A5F" stroke-width="1.6" stroke-linecap="round"/>
+                            <line x1="28" y1="8" x2="28" y2="34" stroke="#1F3A5F" stroke-width="1.6" stroke-linecap="round"/>
+                            <line x1="40" y1="8" x2="40" y2="34" stroke="#1F3A5F" stroke-width="1.6" stroke-linecap="round"/>
+                            <!-- Horizontal floor lines -->
+                            <line x1="4" y1="18" x2="40" y2="18" stroke="#1F3A5F" stroke-width="1.6" stroke-linecap="round"/>
+                            <line x1="4" y1="26" x2="40" y2="26" stroke="#1F3A5F" stroke-width="1.6" stroke-linecap="round"/>
+                            <!-- Ground -->
+                            <line x1="2" y1="34" x2="42" y2="34" stroke="#1F3A5F" stroke-width="1.6" stroke-linecap="round"/>
                         </svg>
                     </div>
                     <h4 class="cat-title">Rent Property</h4>
@@ -144,9 +187,22 @@
                 <!-- Commercial -->
                 <a href="#commercial" class="category-card" aria-label="Commercial Properties">
                     <div class="category-icon-wrap">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <rect x="4" y="4" width="24" height="24" rx="1.333" stroke="#1F3A5F" stroke-width="2"/>
-                            <path d="M4 12h24M4 20h24M12 4v24M20 4v24" stroke="#1F3A5F" stroke-width="2" stroke-linecap="round"/>
+                        <!-- Commercial tower: tall narrow building with antenna -->
+                        <svg width="44" height="36" viewBox="0 0 44 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <!-- Antenna -->
+                            <line x1="22" y1="2" x2="22" y2="8" stroke="#1F3A5F" stroke-width="1.6" stroke-linecap="round"/>
+                            <!-- Main tower outline -->
+                            <line x1="12" y1="8" x2="32" y2="8" stroke="#1F3A5F" stroke-width="1.6" stroke-linecap="round"/>
+                            <line x1="12" y1="8" x2="12" y2="34" stroke="#1F3A5F" stroke-width="1.6" stroke-linecap="round"/>
+                            <line x1="32" y1="8" x2="32" y2="34" stroke="#1F3A5F" stroke-width="1.6" stroke-linecap="round"/>
+                            <!-- Floor lines -->
+                            <line x1="12" y1="15" x2="32" y2="15" stroke="#1F3A5F" stroke-width="1.6" stroke-linecap="round"/>
+                            <line x1="12" y1="22" x2="32" y2="22" stroke="#1F3A5F" stroke-width="1.6" stroke-linecap="round"/>
+                            <line x1="12" y1="29" x2="32" y2="29" stroke="#1F3A5F" stroke-width="1.6" stroke-linecap="round"/>
+                            <!-- Centre vertical divider -->
+                            <line x1="22" y1="8" x2="22" y2="34" stroke="#1F3A5F" stroke-width="1.6" stroke-linecap="round"/>
+                            <!-- Ground -->
+                            <line x1="4" y1="34" x2="40" y2="34" stroke="#1F3A5F" stroke-width="1.6" stroke-linecap="round"/>
                         </svg>
                     </div>
                     <h4 class="cat-title">Commercial</h4>
@@ -157,9 +213,21 @@
                 <!-- New Projects -->
                 <a href="#projects" class="category-card" aria-label="New Projects">
                     <div class="category-icon-wrap">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path d="M16 2.667l3.09 6.26 6.91 1.006-5 4.873 1.18 6.881L16 18.507l-6.18 3.18 1.18-6.881-5-4.873 6.91-1.006L16 2.667z" stroke="#1F3A5F" stroke-width="2" stroke-linejoin="round"/>
-                            <path d="M8 22.667v6.666M16 24v5.333M24 22.667v6.666" stroke="#1F3A5F" stroke-width="2" stroke-linecap="round"/>
+                        <!-- Under construction: pitched roof frame + scaffolding lines -->
+                        <svg width="44" height="36" viewBox="0 0 44 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <!-- Chimney stub -->
+                            <line x1="28" y1="6" x2="28" y2="12" stroke="#1F3A5F" stroke-width="1.6" stroke-linecap="round"/>
+                            <!-- Roof pitch -->
+                            <polyline points="4,20 22,6 40,20" stroke="#1F3A5F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                            <!-- Left scaffold verticals -->
+                            <line x1="8" y1="20" x2="8" y2="34" stroke="#1F3A5F" stroke-width="1.6" stroke-linecap="round"/>
+                            <line x1="14" y1="17" x2="14" y2="34" stroke="#1F3A5F" stroke-width="1.6" stroke-linecap="round"/>
+                            <!-- Right wall line -->
+                            <line x1="36" y1="20" x2="36" y2="34" stroke="#1F3A5F" stroke-width="1.6" stroke-linecap="round"/>
+                            <!-- Scaffold cross-brace -->
+                            <line x1="8" y1="27" x2="14" y2="34" stroke="#1F3A5F" stroke-width="1.4" stroke-linecap="round"/>
+                            <!-- Ground -->
+                            <line x1="2" y1="34" x2="42" y2="34" stroke="#1F3A5F" stroke-width="1.6" stroke-linecap="round"/>
                         </svg>
                     </div>
                     <h4 class="cat-title">New Projects</h4>
@@ -740,7 +808,52 @@
         </div>
     </section>
 
-    
+    <!-- ABOUT + SEO LINKS + PROJECTS SECTION -->
+    <section class="about-seo-projects" id="about">
+        <div class="container asp-container">
+
+            <!-- ===== BLOCK 1: ABOUT + STATS ===== -->
+            <div class="asp-block asp-about-block">
+
+                <!-- Left: Heading + Paragraph -->
+                <div class="asp-about-left">
+                    <span class="section-label">[ About Us ]</span>
+                    <h2 class="asp-about-heading">Gujarat's Most Trusted Real Estate Partner</h2>
+                    <p class="asp-about-body">Gujarat Property has been connecting buyers, sellers, and investors with the right properties since 2010. With deep local expertise across Ahmedabad, Surat, Vadodara, and beyond, we simplify every step of your real estate journey — from search to signing.</p>
+                    <p class="asp-about-body">Our team of certified consultants brings transparency, speed, and personalised service to every transaction, whether you're buying your first home, leasing a commercial space, or growing your investment portfolio.</p>
+                    <a href="#contact-form" class="btn btn-primary asp-about-cta">Talk to an Expert</a>
+                </div>
+
+                <!-- Right: Stat Cards -->
+                <div class="asp-stats-col">
+                    <div class="asp-stat-card">
+                        <span class="asp-stat-number">2,400<span class="asp-stat-plus">+</span></span>
+                        <span class="asp-stat-label">Properties Sold &amp; Leased</span>
+                    </div>
+                    <div class="asp-stat-card">
+                        <span class="asp-stat-number">15<span class="asp-stat-plus">+</span></span>
+                        <span class="asp-stat-label">Years of Market Experience</span>
+                    </div>
+                    <div class="asp-stat-card">
+                        <span class="asp-stat-number">98<span class="asp-stat-plus">%</span></span>
+                        <span class="asp-stat-label">Client Satisfaction Rate</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 
+
+            <!-- ===== BLOCK 3: PROJECT CARDS ===== -->
+            
+
+                  
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <!-- CONTACT US SECTION -->
     <section class="contact-section" id="contact-form">
         <div class="contact-overlay"></div>
